@@ -12,10 +12,11 @@
 .conteiner {
     width: 1150px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
 }
 :root {
     --bg-wrap1: #3098F3;
+    --bg-wrap2: #FFCC00;
     --hever-link: black;
 }
 .visually-hidden {
@@ -165,6 +166,10 @@
             color: #05051E;
             margin-top: auto;
         }
+        &-main-btn:hover {
+            color: #3f3f8d;
+        }
+
         &-main-btn::before {
             content: url(../img/link-arrow-mini.svg);
             display: inline-flex;
@@ -198,5 +203,99 @@
     }
     &-article:nth-child(odd) .case-article-img {
         order: 1;
+    }
+}
+.sprint-wrap {
+    background-color: var(--bg-wrap2);
+}
+.sprint {
+    padding-top: 206px;
+    padding-bottom: 205px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    &-img {
+        margin-right: 83px;
+    }
+    &-main {
+        width: 45%;
+        padding-top: 12px;
+        &-title {
+            font-weight: 400;
+            font-size: 51px;
+            line-height: 67px;
+            letter-spacing: 1.12px;
+            color: #05051E;
+            margin-bottom: 39px;
+        }
+        &-text {
+            line-height: 34px;
+            color: #05051E;
+            margin-bottom: 70px;
+        }
+    }
+}
+.havesay {
+    padding-top: 160px;
+    padding-bottom: 65px;
+    display: flex;
+    flex-direction: column;
+    &-title {
+        font-weight: 400;
+        font-size: 51px;
+        line-height: 67px;
+        letter-spacing: 1.12px;
+        color: #05051E;
+        margin-bottom: 18px;
+    }
+    &-text  {
+        line-height: 34px;
+        color: #05051E;
+        margin-bottom: 55px;
+    }
+    &-cards {
+        display: flex;
+        margin: 0 -16px;
+        padding-bottom: 31px;
+        &-wrap {
+            padding: 0 16px;
+            width: 33.333%;
+        }
+        &-card {
+            display: flex;
+            flex-direction: column;
+            background: #3098F3;
+            padding: 40px;
+            height: 100%;
+            &-text {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 34px;
+                color: #FFFFFF;
+                padding-bottom: 49px;
+            }
+            &-link {
+                align-self: flex-end;
+                margin-top: auto;
+            }
+            &-link:hover path {
+                fill: wheat;
+            }
+        }
+        &-card-01::before {
+            content: url(../img/cards-01.svg);
+            margin-bottom: 21px;
+        }
+        &-card-02::before {
+            content: url(../img/cards-02.svg);
+            margin-bottom: 21px;
+        }
+        &-card-03::before {
+            content: url(../img/cards-03.svg);
+            margin-bottom: 21px;
+        }
+    }
+    a {
+        align-self: flex-end;
     }
 }
